@@ -1,0 +1,35 @@
+body {
+    /* background:linear-gradient(skyblue, lightgreen);
+    background-repeat:no-repeat;
+    background-attachment: fixed; */
+    background-image: url("img.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    margin: 0px;
+
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+p{
+    text-decoration: cyan dotted underline;
+}
+.tables{
+    border-style: solid;
+    border-width: 5px;
+    border-color: gold;
+    border-radius: 10px;
+}
+
+#googleLogo{
+    border: 10px solid black;
+    width: 100px;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}

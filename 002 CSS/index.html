@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="html learning page">
+    <meta name="keywords" content="html, tables, tags">
+    <!-- refreshes the page after 10 seconds -->
+    <!-- <meta http-equiv="refresh" content="10"> -->
+    <title>Page 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Page 1</h1>
+    <hr>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur nisi aliquid vero corporis eos, ex qui
+        pariatur nulla beatae debitis ab sequi cum mollitia odit! Neque corporis porro explicabo ad!</p>
+    <br>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi nisi consequuntur ducimus necessitatibus
+        maiores voluptatibus reiciendis. Cum sit numquam, corporis, libero accusamus voluptas ipsa ex tempora illum
+        reiciendis nisi unde.</p>
+    <a href="page2.html" target="_blank" title="Open page 2">Go to page 2</a>
+    <br>
+    <a href="mailto:example@example.com" target="_self" title="Email me.">Email me</a>
+    <br>
+    <div id="googleLogo">
+        <a href="https://www.google.com/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1200px-Google_%22G%22_logo.svg.png"
+                height="100" alt="Google's logo" title="Google's logo">
+        </a>
+    </div>
+    <h2>Java Roadmap</h2>
+    <ul class="tables">
+        <li>Java<ol type="a" class="tables">
+                <li>basics</li>
+                <li>Streams</li>
+                <li>Generics</li>
+                <li>Memory</li>
+            </ol>
+        </li>
+        <li>JDBC</li>
+        <li>SQL</li>
+        <li>Spring
+            <dl class="tables">
+                <dt>Spring Framework</dt>
+                <dd>Basics of spring Framework including IOC, DI, Beans ...etc</dd>
+                <dt>Spring Boot</dt>
+                <dd>Auto configuration and starters support</dd>
+                <dt>Spring Data</dt>
+                <dd>Easier access to databases</dd>
+                <dt>Spring Security</dt>
+                <dd>Security abstraction</dd>
+            </dl>
+        </li>
+    </ul>
+    <table bgcolor="black">
+        <tr bgcolor="grey">
+            <th width="100">Company</th>
+            <th width="100">Contact</th>
+            <th width="100">Country</th>
+        </tr>
+        <tr bgcolor="lightgrey">
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr bgcolor="lightgrey">
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+    <br>
+    <table bgcolor="black" align="center">
+        <tr bgcolor="grey" align="center">
+            <th>First Name</th>
+            <td>Mahmoud</td>
+        </tr>
+        <tr bgcolor="lightgrey" align="center">
+            <th>Last Name</th>
+            <td>Mansour</td>
+        </tr>
+        <tr bgcolor="grey" align="center">
+            <th>Email</th>
+            <td>example@example.com</td>
+        </tr>
+    </table>
+
+    <h2>Learn HTML</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HD13eq_Pmp8?si=hL3vnmriREmaFOe_"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    <div>
+        <label for="signUpForm">Sign up</label>
+        <form action="localhost:8080/api/v1/users" method="POST" id="signUpForm">
+            <label for="fname">First Name:</label>
+            <input type="text" placeholder="First Name">
+            <br>
+            <label for="lname">Last Name:</label>
+            <input type="text" placeholder="Last Name">
+            <br>
+            <label for="genderDiv">Gender</label>
+            <div id="genderDiv">
+                <input type="radio" name="gender" id="maleRadio" value="male">
+                <label for="maleRadio">Male</label>
+                <br>
+                <input type="radio" name="gender" id="femaleRadio" value="female">
+                <label for="femaleRadio">Female</label>
+            </div>
+            <label for="paymentDiv"></label>
+            <div id="paymentDiv">
+                <label for="paymentMethod">Payment Method</label>
+                <select name="payment" id="paymentMethod">
+                    <option value="visa">Visa</option>
+                    <option value="cashOnDelivery">Cash On Delivery</option>
+                </select>
+            </div>
+            <div>
+                <label for="premiumSubscription">Premium Subscription</label>
+                <input type="checkbox" name="premiumSubscription" id="premiumSubscription">
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
