@@ -1,3 +1,5 @@
+import { Point2 } from "./point";
+
 console.log("Hi")
 let age: number = 20;
 let sales: number = 123_456_789;
@@ -80,3 +82,47 @@ let textBox: UIWidget = {
 //Literal types
 type Metic = "cm" | "inch"
 let measurement: Metic = "cm";
+
+//////////////////////////////////////////////////////
+//Interfaces
+
+interface Point {
+    x: number,
+    y: number,
+    draw: () => void
+}
+
+
+class Point {
+    x: number;
+    y: number;
+    constructor(x: number, y: number) {
+        this.x = x;
+        this.y = y;
+    }
+    printCoordinates() {
+        console.log("This.x: " + this.x + ", This.y: " + this.y);
+    }
+
+    getX() {
+        return this.x;
+    }
+
+    setX(value: number) {
+        this.x = value;
+    }
+
+}
+
+let point: Point = new Point(1, 2);
+point.printCoordinates();
+
+
+
+
+
+let point2: Point2 = new Point2(4, 5);
+point2.printCoordinates();
+point2.x = 10;
+point2.y = 10;
+point2.printCoordinates();
