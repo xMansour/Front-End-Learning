@@ -1,4 +1,34 @@
-<h2>{{getTitle()}}</h2>
-<ul>
-    <li *ngFor="let course of getCourses()">{{course}}</li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>{{getTitle()}}</h2>
+    <ul>
+        <li *ngFor="let course of getCourses()">{{course}}</li>
+    </ul>
+
+    <table>
+        <tr>
+            <th>Course Name</th>
+            <th>Course Price</th>
+        </tr>
+
+        <tr *ngFor="let course of getObjCourses()">
+            <td>{{course.getName()}}</td>
+            <td>{{course.getPrice()}}</td>
+
+        </tr>
+
+    </table>
+
+    <input type="text" (ngModel)="text" (click)="log()">
+    <p >{{text}}</p>
+</body>
+
+</html>
