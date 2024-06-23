@@ -27,8 +27,17 @@
 
     </table>
 
+    Date:
+    {{date| uppercase}}
+    <br>
+    Date Pipe:
+    {{date | date:'d/m/y'}}
+    <br>
+    Price:
+    {{price|currency:"USD"}}
+    <br>
     <input type="text" (ngModel)="text" (click)="log()">
-    <p >{{text}}</p>
+    <p>{{text}}</p>
 </body>
 
 </html>
